@@ -1,0 +1,5 @@
+# add repo from cli; password authentication needed
+curl -u '$( git_username )' https://api.github.com/user/repos -d "{\"name\":\"$( repo_name )\"}"
+
+# add a remote named 'origin' using $repo_name
+git remote add origin git@github.com:$( git_username )/$( repo_name ).git
