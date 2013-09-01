@@ -1,0 +1,4 @@
+# useful .gitignore
+
+# add currently untracked file to .gitignore
+git status --porcelain | grep '^??' | cut -c4- >>.gitignore
